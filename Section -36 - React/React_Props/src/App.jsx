@@ -4,11 +4,25 @@ import list from './components/List'
 import Header from './Header'
 import Footer from './Footer'
 
+function createCard(list){
+  return <Movie_Card 
+  key = {list.id}
+  name = {list.name}
+  genre = {list.genre}
+  img = {list.img}
+  about = {list.about}
+  
+  />
+}
+
 function App() {
   return (
     <div>
     <Header />
-    <Movie_Card 
+    {list.map(createCard)}
+
+
+    {/* <Movie_Card 
     name = {list[0].name}
     genre = {list[0].genre}
     img = {list[0].img}
@@ -28,7 +42,7 @@ function App() {
         genre = {list[2].genre}
         img = {list[2].img}
         about = {list[2].about}  
-    />
+    /> */}
     <Footer />
     </div>
   )
