@@ -4,22 +4,21 @@ import Footer from './components/footer'
 import Note from './components/Note'
 import Notes_items from './components/Notes_items'
 
+function CreateNotes(Notes_items){
+  return <Note 
+  key = {Notes_items.id}
+  title = {Notes_items.title}
+  content = {Notes_items.content}
+  />
+}
+
 
 function App() {
 
   return (
     <div>
       <Header />
-      <Note 
-      title = {Notes_items[0].title}
-      content = {Notes_items[0].content}
-      
-      />
-
-      <Note
-      title = {Notes_items[1].title}
-      content = {Notes_items[1].content}
-      />
+      {Notes_items.map(CreateNotes)}
       <Footer />
       
     </div>

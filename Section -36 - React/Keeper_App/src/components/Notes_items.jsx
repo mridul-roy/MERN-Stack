@@ -1,34 +1,34 @@
 const notes = [
     {
-        title:"This is the title",
-        content: "This is the content.",
-
+        id: 1,
+        title: "Introduction to React",
+        content: "React is a JavaScript library for building user interfaces. It helps create fast and interactive web applications.",
     },
     {
-        title:"This is the title-1",
-        content: "This is the content-1.",
-
+        id: 2,
+        title: "Understanding Components",
+        content: "Components are the building blocks of a React application. They can be functional or class-based.",
     },
     {
-        title:"This is the title-2",
-        content: "This is the content-2.",
-
+        id: 3,
+        title: "State Management",
+        content: "State is used to store data in a React component. Managing state effectively is crucial for dynamic web apps.",
     },
     {
-        title:"This is the title-3",
-        content: "This is the content-3.",
-
+        id: 4,
+        title: "Props in React",
+        content: "Props are used to pass data from parent to child components in React. They are read-only and immutable.",
     },
     {
-        title:"This is the title-4",
-        content: "This is the content-4.",
-
+        id: 5,
+        title: "React Hooks",
+        content: "Hooks allow you to use state and other React features in functional components. Examples include useState and useEffect.",
     },
     {
-        title:"This is the title-5",
-        content: "This is the content-5.",
-
+        id: 6,
+        title: "Routing with React Router",
+        content: "React Router is a library for managing navigation in React apps. It helps create single-page applications with multiple views.",
     },
-]
+];
 
 export default notes;
