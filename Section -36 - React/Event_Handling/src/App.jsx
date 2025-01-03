@@ -12,10 +12,14 @@ function handleClick(){
 };
 
 
-// function handleMouseOver(){
-//   setMouseOver(true)
+function handleMouseOver(){
+  setMouseOver(true)
     
-//     };  
+    };
+    
+function handleMouseOut(){
+  setMouseOver(false)
+};
 
 
 
@@ -25,7 +29,10 @@ function handleClick(){
       <h2>{headingText}</h2>
       <input type="text" placeholder="Username"/>
       <input type="password" placeholder="Password"/>
-      <button onClick={handleClick} onMouseOver={handleMouseOver} style={{backgroundColor: isMouseOver? "green" : "white"}}>Login</button>
+      <button onClick={handleClick} 
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}  
+              style={{backgroundColor: isMouseOver? "green" : "white"}}>Login</button>
 
     </div>
   )
