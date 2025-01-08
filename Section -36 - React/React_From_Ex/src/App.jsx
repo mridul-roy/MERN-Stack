@@ -16,8 +16,10 @@ function App() {
       <input onChange={handleTextOver} type="text" placeholder="FirstName"/>
       <input type="text" placeholder='LastName'/> 
       <input type="password" placeholder="Password"/>
+      <input type="email" placeholder="Email"/>
+      <input type="number" placeholder="Phone"/>
       <button>Login</button>
-      
+
       
     </div>
   )
